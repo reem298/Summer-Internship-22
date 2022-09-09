@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js"> <!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+
+  <!-- CHANGE YOUR NAME -->
+  <title>Reem Ahmed || Maker Diploma</title>
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+  <link rel="shortcut icon" href="images/favicon.ico"  type="image/x-icon">
+  <link href='http://fonts.googleapis.com/css?family=Droid+Serif|Ubuntu' rel='stylesheet' type='text/css'>
+  <link rel="stylesheet" href="css/normalize.css">
+  <link rel="stylesheet" href="js/flexslider/flexslider.css">
+  <link rel="stylesheet" href="css/colorblocks-style.css">
+  <script src="js/libs/modernizr-2.6.2.min.js"></script>
+</head>
+
+
+<body id="home">
+    <header class="wrapper clearfix">
+		       
+        <div id="banner">        
+        	<div id="logo"><a href=""><img src="images/logo.png" alt="logo" height="30%" width="30%"></a></div> 
+        </div>
+
+        <nav id="topnav" role="navigation">
+          <div class="menu-toggle">Menu</div>  
+            <ul class="srt-menu" id="menu-main-navigation" style="padding-bottom: 10px;">
+              <li class="current"><a href="index.html">Home</a></li>
+              <li>
+                <a href="assignment_3.html">Assignments</a>
+                <ul>
+                  <li><a href="assignment_1.html">Assignment</a></li>
+                  <li><a href="assignment_2.html">Assignment</a></li>
+                  <li><a href="assignment_3.html">Assignment</a></li>
+                  <li><a href="assignment_4.html">Assignment</a></li>
+                </ul>
+              </li>
+              <li><a href="final.html">Final Project</a></li>
+            </ul>     
+        </nav>
+  
+    </header><!-- end header -->
+ 
+    <section id="page-header" class="clearfix">    
+   
+    <div class="wrapper">
+      <h1>Assignment 3: PCB</h1>
+    </div>
+    </section>
+
+<div id="main" class="wrapper clearfix">    
+    
+	<section id="content">
+    <!-- ADD YOUR THE STEPS OF YOUR DOCUMENTATION BELOW -->
+    <!-- TO ADD IMAGES YOU WILL FIND IMG TAGS BETWEEN PARAGRAPHS -->
+    <!-- ADD THE NAME OF YOUR FILE -->
+                <h1>Step 1:Choosing circuit</h1>
+                <p>I choosed this super easy circuit, check the following link to get more</p>
+                <p><a href=https://drive.google.com/file/d/1rbr2bvETx6JQBiWmp-FH26ze2OLwy6Da/view></a></p>
+
+                <img src="images/electronic cricket.PNG">
+                               
+                <h1>Step 2:Schematic design</h1>
+                <p>I use Eagle to design pcbs, so first i designed the Schematic of the circuit by adding parts and connectin them as shown in the circuit diagram</p>
+                <img src="images/schematic.PNG">
+
+                <h1>Step 3:layout design</h1>
+                <p>layout desiegn requires to connect all airwires without any intersections, so it i choosed from layers buttom layer then i connected all airwires</p>
+              <p>remember to check DRC& ERC to make sure that your design is able to be printed on cnc, NOTE:you can choose Autorouter to improve you routing, also remeber to minimize the size of dimentions as possible as you can.</p>
+                <img src="images/layout.PNG">
+                <img src="images/layout enterface.PNG">
+                <h1>Step 4:exporting layout images</h1>
+                <p>as shown in the photo from files choose export then image, before that you should have hidden all layers and showed only buttom, frame and drills</p>
+                <p>Note that we hide the acutal drilles when we export traces image, then we show drilles only to export drills and finally we only show frame to export the frame.</p>
+                <p><img src="images/exporting images.PNG"></p>
+                
+                <h1>Step 5:Editing exported images</h1>
+                <p>view the exported images on paint then flap them horizontally and eidit on thier colors just because the machine deticts the difference between white and black so make it easier to the machine.</p>
+                <img src="images/traces.png">
+                <img src="images/drills.png">
+                <img src="images/frame.png">
+               
+                <h1>Step 6: Geber files</h1>
+                <p>There's an open source module to import gerber files, so Gerber files are open ASCII vector format files that contain information on each physical board layer of your PCB design   </p>
+                <p><a href="https://mods.cba.mit.edu/"> fab mods website!</a></p>
+                <p>click right=> choose programs=> open server program=> chooseSRM-20 then pcb png.</p>
+                <img src="images/fab mods.PNG">
+                <img src="images/fab mods2.PNG.PNG">
+                <p>it will lead you to the following module</p>
+                <img src="images/module.PNG">
+                <p>selsct your images traces, drills and frame one by one and do these setteings to the module.
+                  for traces:
+                  for drills:
+                  for frame: </p>
+
+                <h1>Step 7:CNC Router</h1>   
+                <p> first change the mill v-shaped to a suitable size, between 6 mills to 10 mills </p>
+                <p>note that you have to put a sacrifices material, wood for example</p>
+                <img src="images/pcb2.png">
+                
+</section><!-- #end content area -->
+      
+      
+    <!-- sidebar -->    
+    <aside>
+        <h2>See also: </h2>
+            <nav id="secondary-navigation">
+                    <ul>
+                        <li class="current"><a href="assignment_1.html">Assignment</a></li>
+                        <li><a href="assignment_1.html">assignment_1</a></li>
+                        <li><a href="assignment_2.html">assignment_2</a></li>
+                        <li><a href="assignment_3.html">assignment_3</a></li>
+                        <li><a href="assignment_4.html">assignment_4</a></li>
+                        <li><a href="assignment_.html">Assignment</a></li>
+
+                    </ul>
+             </nav>
+      </aside><!-- #end sidebar -->
+    
+    
+    
+</div><!-- #end div #main .wrapper -->
+
+
+
+
+
+<!-- footer area -->    
+<footer>
+        <div id="colophon" class="wrapper clearfix">
+          <h2 style="padding-left: 30px;">PROUDLY MADE BY MAKERS</h2>
+            <img src="images/logo.png" height="30%" width="30%">
+        </div>
+        
+    </footer><!-- #end footer area --> 
+
+
+<!-- jQuery -->
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1/jquery.min.js"></script>
+<script>window.jQuery || document.write('<script src="js/libs/jquery-1.9.0.min.js">\x3C/script>')</script>
+
+<script defer src="js/flexslider/jquery.flexslider-min.js"></script>
+
+<!-- fire ups - read this file!  -->   
+<script src="js/main.js"></script>
+
+</body>
+</html>
